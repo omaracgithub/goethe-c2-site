@@ -1,0 +1,22 @@
+# GoethePrep C2
+
+> iOS app for preparing the Goethe-Zertifikat C2 German exam.
+
+## About
+GoethePrep C2 helps candidates prepare for the Goethe-Zertifikat C2 exam with 7 complete practice exams, real audio, AI writing correction, progress tracking, and daily practice drills.
+
+## Features
+- 7 complete practice exams in official format
+- Real audio with native German speakers
+- AI-powered writing correction for Schreiben section
+- Progress tracking by section and task
+- Daily quick practice drills
+- Section-specific practice (Lesen, Hören, Schreiben, Sprechen)
+
+## Links
+- Website: https://c2.goetheprep.com/
+- Main site: https://goetheprep.com/
+- Blog: https://c2.goetheprep.com/blog/
+
+## Contact
+hello@goetheprep.com
