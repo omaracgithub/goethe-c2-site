@@ -111,3 +111,26 @@
     }
   }, { passive: true });
 })();
+
+/* GA4 CTA + Outbound Click Tracker */
+(function () {
+  'use strict';
+  function track(eventName, props) {
+    try { if (window.gtag) window.gtag('event', eventName, props || {}); } catch (e) {}
+  }
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a');
+    if (!link) return;
+    var href = link.href || '';
+    if (href.includes('apps.apple.com') || href.includes('itunes.apple.com')) {
+      track('CTA Click', {
+        page_hostname: window.location.hostname,
+        cta: link.getAttribute('data-cta') || 'app_store',
+        link_url: href,
+        link_text: link.textContent.trim().substring(0, 50),
+        page_path: window.location.pathname,
+        page_url: window.location.href
+      });
+    }
+  });
+})();
