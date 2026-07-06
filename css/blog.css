@@ -188,7 +188,7 @@
 }
 
 .article-content {
-  max-width: 68ch;
+  max-width: 800px;
   font-size: 1.05rem;
   line-height: 1.75;
 }
